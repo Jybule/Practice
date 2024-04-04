@@ -1,0 +1,19 @@
+using System;
+
+public class Program
+{
+    public static void Main()
+    {
+        int seconds = 3660; // Пример: 3660 секунд прошло с начала суток
+
+        int fullHours = seconds / 3600;
+        int remainingSecondsAfterHours = seconds % 3600;
+
+        int fullMinutes = remainingSecondsAfterHours / 60;
+        int fullSeconds = remainingSecondsAfterHours % 60;
+
+        Console.WriteLine("Полных часов прошло с начала суток: " + fullHours);
+        Console.WriteLine("Полных минут прошло с начала очередного часа: " + fullMinutes);
+        Console.WriteLine("Полных секунд прошло с начала очередной минуты: " + fullSeconds);
+    }
+}
